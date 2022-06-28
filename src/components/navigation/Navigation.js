@@ -1,10 +1,14 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>asfalt</div>
+      <span className={styles.logo}>
+        <Link to='/' className={styles.logo_link}>
+          asfalt
+        </Link>
+      </span>
       <nav className={styles.nav}>
         <ul>
           <NavLink className={styles.navlink} to='/shop'>
